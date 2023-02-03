@@ -16,7 +16,7 @@ services:
       - "2181:2181"
 
   kafka:
-    image: obsidiandynamics/kafka
+    image: wurstmeister/kafka
     container_name: kafka
     restart: "no"
     networks:
