@@ -1,7 +1,2 @@
 server:
-  port: 8081
-
-spring:
-  kafka:
-    consumer:
-      group-id: "default"
+  port: 8080
