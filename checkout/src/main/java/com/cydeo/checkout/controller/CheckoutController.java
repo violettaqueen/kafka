@@ -1,6 +1,7 @@
 package com.cydeo.checkout.controller;
 
 import com.cydeo.checkout.dto.CheckoutDTO;
+import com.cydeo.checkout.service.CheckoutService;
 import com.cydeo.checkout.service.ProducerService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.web.bind.annotation.PostMapping;

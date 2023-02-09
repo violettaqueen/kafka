@@ -15,14 +15,14 @@ services:
     ports:
       - "2181:2181"
 
-  kafka:
-    image: wurstmeister/kafka
+  kafka:  #broker
+    image: obsidiandynamics/kafka
     container_name: kafka
     restart: "no"
     networks:
       - kafka-net
     ports:
-      - "9092:9092"
+      - "9092:9092"    #broker port
     environment:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: DOCKER_INTERNAL:PLAINTEXT,DOCKER_EXTERNAL:PLAINTEXT
       KAFKA_LISTENERS: DOCKER_INTERNAL://:29092,DOCKER_EXTERNAL://:9092
